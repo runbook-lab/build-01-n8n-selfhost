@@ -1,0 +1,8 @@
+# Runbook Lab Build 1 — HTTPS in front of n8n
+# On a real server with a public domain, delete the "tls internal" line:
+# Caddy then gets a Let's Encrypt certificate automatically.
+n8n.runbook.test {
+	tls internal
+	reverse_proxy 127.0.0.1:5678
+}
+

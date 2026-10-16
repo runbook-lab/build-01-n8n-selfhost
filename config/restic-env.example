@@ -1,0 +1,6 @@
+# Copy to /root/.restic-env (chmod 600). Use an off-server repository on a real server, e.g.:
+#   export RESTIC_REPOSITORY=s3:https://<endpoint>/<bucket>
+#   export AWS_ACCESS_KEY_ID=<key>
+#   export AWS_SECRET_ACCESS_KEY=<secret>
+export RESTIC_REPOSITORY=/srv/backup-repo
+export RESTIC_PASSWORD_FILE=/root/.restic-password   # lose this = lose every backup
